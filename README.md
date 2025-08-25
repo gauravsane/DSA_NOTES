@@ -519,5 +519,23 @@ int main(){
     string replString = regex_replace(s,re,"");
     int n = replString.length();checkPalindrome(0,replString,n);
 }
+
+2] Fibonacci Series
+#include <bits/stdc++.h>
+using namespace std;
+
+ int printFibonacci(int n){
+        if (n <= 1) return n;
+        int flast = printFibonacci(n - 1);
+        int slast = printFibonacci(n - 2);
+        cout << flast + slast;
+        return flast + slast;
+    }
+
+int main()
+{
+   int n = 2;
+   return printFibonacci(n);
+}
                           
                               
