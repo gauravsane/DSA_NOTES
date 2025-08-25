@@ -2,7 +2,7 @@
 DSA From August
 
 
---------------------10/08/2025----------------------------------------------
+## --------------------10/08/2025----------------------------------------------
 1] Data Types In C++
 = int,long, long long, float, double, string, getline and char
 
@@ -20,7 +20,7 @@ calculating time complexity avoid constants and lower values
 
 
 
------------------------11/08/2025------------------------------------------
+## -----------------------11/08/2025------------------------------------------
 5] Pattern Logic
 Rule1: "Outor For Loop count No of Rows"
 Rule2: "Inner For Loop used for columns and connect somehows to the rows"
@@ -98,7 +98,7 @@ int main()
 }
 
 
------------------------------12/08/25-----------------------------------
+## -----------------------------12/08/25-----------------------------------
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -152,7 +152,7 @@ int main()
 
 
 
--------------------------------13/08/2025------------------------------
+## -------------------------------13/08/2025------------------------------
 void print10(int n){
     for(int i=1;i<=2*n-1;i++){
         int star = i;
@@ -205,7 +205,7 @@ int main()
 
 
 
----------------------------------------14/08/2025-------------------------------------------------
+## ---------------------------------------14/08/2025-------------------------------------------------
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -297,7 +297,7 @@ int main()
 
 
 
-------------------------------------15/08/2025-------------------------------------------------
+## ------------------------------------15/08/2025-------------------------------------------------
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -358,14 +358,14 @@ int main(){
     print20(6);
 }
 
--STL (Standard Template Library)-
+## -STL (Standard Template Library)-
 
-1] Pairs = Present in Utility function, it is used to stored paired values,
-2] Vectors = Its a Container stored values like array but we can modified also that values;
-3] dataStructure<dataType>::iterator it = v.begin() || v.end() || v.rend() || v.rbegin(); -----syntax of iterator is basically used to access the vector values stored in memories;
+# 1] Pairs = Present in Utility function, it is used to stored paired values,
+# 2] Vectors = Its a Container stored values like array but we can modified also that values;
+# 3] dataStructure<dataType>::iterator it = v.begin() || v.end() || v.rend() || v.rbegin(); -----syntax of iterator is basically used to access the vector values stored in memories;
 
 
-------------------17/08/2025---------------------------------
+## ------------------17/08/2025---------------------------------
 
 1] Stack = Works in Lifo principle last in first out
 2] Queue = Works in Fifo principle first in first out
@@ -388,11 +388,11 @@ top = log n
 9] Unordered Map = Unique keys
 
 
----------------------------18/08/2025------------------------------
+## ---------------------------18/08/2025------------------------------
 1] If your code any operation perform by division then time complexity is always logn(N)
 
 
-------------------------19/08/2025---------------------------------
+## ------------------------19/08/2025---------------------------------
 1] Find Factors of Number Using Sqrt method
 #include <bits/stdc++.h>
 using namespace std;
@@ -454,7 +454,7 @@ int main() {
 }
 
 
-------------------------------20/8/2025-------------------------
+## ------------------------------20/8/2025-------------------------
 1] Recursion = Its a function call itself until specific condition is met;
 
 #include <bits/stdc++.h>
@@ -473,7 +473,7 @@ int main()
 }
 
 
-------------------------------------21/08/2025-----------------------------
+## ------------------------------------21/08/2025-----------------------------
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -495,7 +495,7 @@ int main()
     int c = parameterRecursion(3,1);
     cout << c;
 }
-----------------------------------------25/08/2025---------------------------
+## ----------------------------------------25/08/2025---------------------------
 1] Check Given String in Palindrome or not
 #include <bits/stdc++.h>
 using namespace std;
