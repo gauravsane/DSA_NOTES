@@ -710,3 +710,58 @@ int main() {
 	sumAndProductOfArray(arr,size);
 	return 0;
 }
+
+6] Swap the Max and Min No from an Array
+#include <bits/stdc++.h>
+using namespace std;
+
+
+void swapMinMaxNo(int arr[],int sz){
+    int maxNo = INT_MIN;
+    int minNo = INT_MAX;
+    int indexMin = 0;
+    int indexMax = 0;
+    for(int i = 0; i<sz; i++){
+        if(arr[i] < minNo){
+            minNo = arr[i];
+            indexMin = i;
+        }
+        else if(arr[i] > maxNo){
+            maxNo = arr[i];
+            indexMax = i;       
+        }
+    }
+
+    swap(arr[indexMin],arr[indexMax]);
+}
+
+
+int main() {
+	int arr[] = {1,2,4,2};
+	int size = 4;
+	swapMinMaxNo(arr,size);
+	for(int i=0;i<size;i++){
+	    cout << arr[i] << " ";
+	}
+	return 0;
+}
+
+7] Print All the Unique values from an Array
+#include <bits/stdc++.h>
+using namespace std;
+
+
+void uniqueValues(int arr[],int sz){
+    set<int> uniqueValues(arr,arr+sz);
+    for(int val: uniqueValues){
+        cout << val << " ";
+    }
+}
+
+int main() {
+        int arr[] = {1,2,4,2};
+        int size = 4;
+        uniqueValues(arr,size);
+        return 0;
+}
+
