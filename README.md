@@ -687,3 +687,26 @@ int main() {
             cout << arr[i] << " ";
         }
         return 0;
+
+5]Calculate sum and product of all numbers present in Array
+#include <bits/stdc++.h>
+using namespace std;
+
+
+void sumAndProductOfArray(int arr[],int sz){
+    int sum = 0;
+    int product = 1;
+   for(int i = 0;i<sz; i++){
+       sum += arr[i];
+       product *= arr[i];
+   } 
+   cout << sum << endl;
+   cout << product;
+}
+
+int main() {
+	int arr[] = {1,2,4,2};
+	int size = 4;
+	sumAndProductOfArray(arr,size);
+	return 0;
+}
