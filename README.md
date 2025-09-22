@@ -538,4 +538,152 @@ int main()
    return printFibonacci(n);
 }
                           
-                              
+
+## ------------------29/08/2025---------------------
+1] Hashing
+-In hashing using array you can only go 10^6 in main and 10^7 in globally
+
+## ---------------------31/08/2025------------------
+1] Hashing Methods:
+- Division Method
+- Folding Method
+- Mid Square Method
+
+
+## ------------------07-09-2025-------------------------
+1] Selection-Sort = Get the minimum value and swap it.
+#include <bits/stdc++.h>
+using namespace std;
+
+
+void selection_sort(int arr[],int n){
+    for(int i=0;i<=n-2;i++){
+        int miniV = i;
+        for(int j = i; j<=n-1; j++){
+            if(arr[j] < arr[miniV]){
+            miniV = j;
+            }
+        }
+        int temp = arr[miniV];
+        arr[miniV] = arr[i];
+        arr[i] = temp;
+    }
+}   
+
+int main(){
+    int nums[] = {12,2,4,5,6,1,0};
+    selection_sort(nums,7);
+     cout << "Sorted array: ";
+    for (int i = 0; i < 7; i++) {
+        cout << nums[i] << " ";
+    }
+}
+Time complexity = O(n^2) worst best and average;
+
+2] Bubble-Sort = Push the maximum values to the last by adjacent swaping
+void bubble_sort(int arr[],int n){
+    for(int i = n-1; i>=0; i--){
+        for(int j=0; j<=i-1; j++){
+            if(arr[j] > arr[j+1]){
+                int temp = arr[j+1];
+                arr[j+1] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+}
+Time Complexity = Best = O(N) is already sorted and worst is O(n^2);
+
+
+3] Insertion Sort = Take an element and place it in correct order
+void insertion_sort(int arr[],int n){
+    for(int i=0; i<=n-1; i++){
+        int j=i;
+        while(j > 0 && arr[j-1] > arr[j]){
+            int temp = arr[j-1];
+            arr[j-1] = arr[j];
+            arr[j] = temp;
+            j--;
+        }
+    }
+    Time Complexity = Best = O(N) is already sorted and worst is O(n^2);
+
+
+ ## -------------------------22-09-2025-------------------------------
+1] Find smalles and largest value with its index position
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+        int nums[] = {32,5,78,-4,7,1};
+        int size = 5;
+
+        int smallestValue = INT_MAX;
+        int largestValue = INT_MIN;
+        int smallestIndex = 0;
+        int largestIndex = 0;
+        for (int i=0; i<=size; i++) {
+                if(nums[i] < smallestValue) {
+                        smallestValue = nums[i];
+                        smallestIndex = i;
+                }
+                else if(nums[i] > largestValue){
+                    largestValue = nums[i];
+                    largestIndex = i;
+                }
+        }
+        cout << "Smallest-Value: " << smallestValue << endl;
+        cout << "Smallest-Index: " << smallestIndex << endl;
+        cout << "Largest-Value: " << largestValue << endl;
+        cout << "Largest-Index: " << largestIndex << endl;
+        return 0;
+}
+
+2] Pass by refrence in C++ change in original array;
+
+3] Linear Search
+#include <bits/stdc++.h>
+using namespace std;
+
+int linearSearch(int arr[],int sz,int target){
+    for (int i = 0; i<sz; i++){
+        if (arr[i] == target){
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main() {
+        int arr[] = {32,5,78,-4,7,1};
+        int size = 5;
+        int target = -40;
+        int lSearch = linearSearch(arr,size,target);
+        cout << lSearch;
+        return 0;
+}
+Time Complexity = O(n);
+
+
+4] Reverse an Array
+#include <bits/stdc++.h>
+using namespace std;
+
+
+void reverseArray(int arr[],int size){
+    int start = 0;
+    int end = size -1;
+    while (start < end){
+        swap(arr[start],arr[end]);
+        start++;
+        end--;
+    }
+}
+int main() {
+        int arr[] = {32,5,78,-4,7,1};
+        int size = 6;
+        reverseArray(arr,size);
+        for (int i=0;i<size;i++){
+            cout << arr[i] << " ";
+        }
+        return 0;
